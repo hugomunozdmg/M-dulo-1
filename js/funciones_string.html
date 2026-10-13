@@ -13,22 +13,58 @@
 
 
     <script>
-        const word = "Holaa"
-        let upperCase
-        console.log(word.length)
-        upperCase = word.toUpperCase()
-        console.log(word.toLowerCase())
-        console.log(upperCase)
-        console.log(word.indexOf("la"))
-        console.log(word.substring(0, 3))
-        console.log(word)
-        console.log(word.replace("a", "e"))
-        console.log(word)
+        //1
+        // const word = prompt("Dame una palabra:")
+        // const wordLength = word.length
 
-        let datos = "x:12; y: 2, z:4, x:12, y: 2, z:4, x:12, y: 2, z:4"
+        // alert(`La longitud de la palabra ${word} es ${wordLength}`)
 
-        let number = 12
-        console.log(number.toString())
+        //2
+        // const sentence = prompt("Dame una frase en mayúsculas:")
+        // const sentenceMinus = sentence.toLowerCase()
+
+        // alert(sentenceMinus)
+
+        //3
+        // const sentence = prompt("Dame una frase en minúsculas:")
+        // const sentenceMayus = sentence.toUpperCase()
+
+        // alert(sentenceMayus)
+
+        //4
+        // const sentence = prompt("Dame una frase:")
+        // const firstIntervalValue = parseInt(prompt("Dame el primer valor del intervalo:"))
+        // const secondIntervalValue = parseInt(prompt("Dame el segundo valor del intervalo:"))
+
+        // alert(sentence.substring(firstIntervalValue - 1, secondIntervalValue))
+
+        //5
+        // const name = prompt("Dame tu nombre")
+        // const baseSentece = "Hola (name)"
+
+        // const updatedSentence = baseSentece.replace("(name)", name)
+        // alert(updatedSentence)
+
+        //6
+        // const word = prompt("Introduzca palabra:")
+        // let firstHalf = word.substring(0, parseInt(word.length / 2))
+        // let secondHalf = word.substring(parseInt(word.length / 2), word.length)
+        // console.log(firstHalf.toLocaleLowerCase() + secondHalf.toUpperCase())
+
+        //7
+        // const chain = prompt("Dame una frase:")
+        // alert(chain.substring(5, 10 + 1))
+
+        //8
+        const sum = prompt("Dame una suma:")
+        const sumIndex = sum.indexOf("+")
+
+        const firstNum = parseFloat(sum.substring(0, sumIndex))
+        const secondNum = parseFloat(sum.substring(sumIndex + 1, sum.length))
+        console.log(firstNum + secondNum)
+        console.log(firstNum)
+
+
     </script>
 </body>
 
