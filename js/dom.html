@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="my-div"><p>hola desde antes</p></div>
+    <p id="my-text"></p>
+    <script>
+        document.getElementById("my-div").innerHTML = "<p>hola desde javascript</p>"
+        document.getElementById("my-div").style.color = "red"
+        document.getElementById("my-text").innerText = "<p>hola desde javascript</p>"
+    </script>
+</body>
+
+</html>
