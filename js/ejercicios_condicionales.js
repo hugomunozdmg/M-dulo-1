@@ -361,40 +361,41 @@
 
 //26
 
-const computerChoice = parseInt(Math.random() * 3) + 1
+// const computerChoice = parseInt(Math.random() * 3) + 1
 
-const userChoice = prompt(`
-    1 - piedra
-    2 - papel
-    3 - tijera
-    `)
+// const userChoice = prompt(`
+//     1 - piedra
+//     2 - papel
+//     3 - tijera
+//     `)
 
-if (computerChoice == 1 && userChoice == 2 ||
-    computerChoice == 2 && userChoice == 3 ||
-    computerChoice == 3 && userChoice == 1
-) {
-    alert(`
-        1 - piedra
-        2 - papel
-        3 - tijera
-        el ordenador ha elegido: ${computerChoice}
-        tú has elegido: ${userChoice}
-        has ganado`)
-} else if (computerChoice == userChoice) {
-    alert(`
-        1 - piedra
-        2 - papel
-        3 - tijera
-        el ordenador ha elegido: ${computerChoice}
-        tú has elegido: ${userChoice}
-        habeis empatado`)
-} else {
-    alert(`
-        1 - piedra
-        2 - papel
-        3 - tijera
-        el ordenador ha elegido: ${computerChoice}
-        tú has elegido: ${userChoice}
-        has perdido`)
-}
+// if (computerChoice == 1 && userChoice == 2 ||
+//     computerChoice == 2 && userChoice == 3 ||
+//     computerChoice == 3 && userChoice == 1
+// ) {
+//     alert(`
+//         1 - piedra
+//         2 - papel
+//         3 - tijera
+//         el ordenador ha elegido: ${computerChoice}
+//         tú has elegido: ${userChoice}
+//         has ganado`)
+// } else if (computerChoice == userChoice) {
+//     alert(`
+//         1 - piedra
+//         2 - papel
+//         3 - tijera
+//         el ordenador ha elegido: ${computerChoice}
+//         tú has elegido: ${userChoice}
+//         habeis empatado`)
+// } else {
+//     alert(`
+//         1 - piedra
+//         2 - papel
+//         3 - tijera
+//         el ordenador ha elegido: ${computerChoice}
+//         tú has elegido: ${userChoice}
+//         has perdido`)
+// }
 
+//27
