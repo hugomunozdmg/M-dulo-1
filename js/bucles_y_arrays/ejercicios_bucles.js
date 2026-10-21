@@ -189,28 +189,76 @@
 
 
 //16
-let date = prompt("dame una fecha (dd-mm-aaaa)")
+// let date = prompt("dame una fecha (dd-mm-aaaa)")
 
-let d = parseInt(date.substring(0, 2))
-let m = parseInt(date.substring(3, 5))
-let a = parseInt(date.substring(6, 11))
+// let d = parseInt(date.substring(0, 2))
+// let m = parseInt(date.substring(3, 5))
+// let a = parseInt(date.substring(6, 11))
 
-let aBisiesto = a % 4 == 0
+// let aBisiesto = (a % 4 == 0 && (a % 100 != 0 || a % 400 == 0))
 
-let days31 = [1, 3, 5, 7, 8, 10, 12]
-let days30 = [4, 6, 9, 11]
-let days28 = 2
-let daysMonth
+// let days31 = [1, 3, 5, 7, 8, 10, 12]
+// let days30 = [4, 6, 9, 11]
+// let days28 = 2
+// let daysMonth
 
 
-for (let i = 0; i < days31.length; i++) {
-    if (m == days31[i]) {
-        daysMonth = 31
-    }
-}
+// for (let i = 0; i < days31.length; i++) {
+//     if (m == days31[i]) {
+//         daysMonth = 31
+//     }
+// }
 
-for (let i = 0; i < days30.length; i++) {
-    if (m == days30[i]) {
-        daysMonth = 30
-    }
-}
+// for (let i = 0; i < days30.length; i++) {
+//     if (m == days30[i]) {
+//         daysMonth = 30
+//     }
+// }
+
+// if (m == 2 && aBisiesto) {
+//     daysMonth = 29
+// } else if (m == 2) {
+//     daysMonth = 28
+// }
+
+// if (d > daysMonth || m > 12) {
+//     alert("año invalido")
+// } else {
+
+//     if (d == 31 && daysMonth == 31 ||
+//         d == 30 && daysMonth == 30 ||
+//         d == 29 && daysMonth == 29 ||
+//         d == 28 && daysMonth == 28
+//     ) {
+//         d = 1
+//         if (m == 12) {
+//             m = 1
+//             a = a + 1
+//         } else {
+//             m = m + 1
+//         }
+//     } else {
+//         d = d + 1
+//     }
+
+//     alert(`${d}/${m}/${a}`)
+// }
+
+//17
+// let pyramidHeigth = parseInt(prompt("altura de la piramide"))
+// let symbol = prompt("simbolo")
+
+// for (let i = 1; i < 2 * pyramidHeigth; i += 2) {
+//     let level = symbol + "  "
+//     for (let j = 1; j < i; j++) {
+//         level += symbol + "  "
+//     }
+//     document.getElementById("ejercicios").innerHTML += `<p>${level + i}</p>`
+// }
+// document.getElementById("ejercicios").style.display = "flex"
+// document.getElementById("ejercicios").style.flexDirection = "column"
+// document.getElementById("ejercicios").style.alignItems = "center"
+
+
+//Ejercicio largo
+

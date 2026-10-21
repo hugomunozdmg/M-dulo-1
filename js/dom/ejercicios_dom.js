@@ -132,37 +132,37 @@
 // `
 
 //8
-const age = parseInt(prompt("Dime tu edad"))
-const dayPrice = 25
-const weekPrice = 150
-let userName
-let surname
-let cityPickUp
-let daysNumber
-let totalCost
+// const age = parseInt(prompt("Dime tu edad"))
+// const dayPrice = 25
+// const weekPrice = 150
+// let userName
+// let surname
+// let cityPickUp
+// let daysNumber
+// let totalCost
 
-if (age >= 18) {
-    let haveDriveLicense = prompt("tienes carnet de conducir") == "si" ? true : false
-    if (haveDriveLicense) {
-        userName = prompt("nombre")
-        surname = prompt("apellido")
-        cityPickUp = prompt("ciudad de recogida")
-        daysNumber = parseInt(prompt("número de días"))
+// if (age >= 18) {
+//     let haveDriveLicense = prompt("tienes carnet de conducir") == "si" ? true : false
+//     if (haveDriveLicense) {
+//         userName = prompt("nombre")
+//         surname = prompt("apellido")
+//         cityPickUp = prompt("ciudad de recogida")
+//         daysNumber = parseInt(prompt("número de días"))
 
-        let weeksNumber = parseInt(daysNumber / 7)
-        totalCost = weeksNumber * weekPrice + (daysNumber - 7 * weeksNumber) * dayPrice
+//         let weeksNumber = parseInt(daysNumber / 7)
+//         totalCost = weeksNumber * weekPrice + (daysNumber - 7 * weeksNumber) * dayPrice
 
-        document.getElementById("ejercicios").innerHTML = `
-            <p>Nombre: ${userName}</p>
-            <p>Apellido: ${surname}</p>
-            <p>Ciudad de recogida: ${cityPickUp}</p>
-            <p>Número de días: ${daysNumber}</p>
-            <p>Precio final: ${totalCost}</p>
-            `
+//         document.getElementById("ejercicios").innerHTML = `
+//             <p>Nombre: ${userName}</p>
+//             <p>Apellido: ${surname}</p>
+//             <p>Ciudad de recogida: ${cityPickUp}</p>
+//             <p>Número de días: ${daysNumber}</p>
+//             <p>Precio final: ${totalCost}</p>
+//             `
 
-    } else {
-        document.getElementById("ejercicios").innerHTML = "<h3>no puedes alquilar el coche</h3>"
-    }
-} else {
-    document.getElementById("ejercicios").innerHTML = "<h3>no puedes alquilar el coche</h3>"
-}
+//     } else {
+//         document.getElementById("ejercicios").innerHTML = "<h3>no puedes alquilar el coche</h3>"
+//     }
+// } else {
+//     document.getElementById("ejercicios").innerHTML = "<h3>no puedes alquilar el coche</h3>"
+// }
