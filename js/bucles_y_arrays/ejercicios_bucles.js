@@ -260,5 +260,79 @@
 // document.getElementById("ejercicios").style.alignItems = "center"
 
 
-//Ejercicio largo
+//==== Ejercicio largo ====
+
+// const menu = `
+// **********************
+// Calculadora
+// **********************
+// 1. Suma 
+// 2. Resta
+// 3. Multiplicación
+// 4. Potencia
+// 5. Division
+// 6. Raiz
+// 7. Salir
+// `
+// let option
+// let num1
+// let num2
+// let result
+// let selected
+// let selectedSymbol
+
+// do {
+//     option = parseInt(prompt(menu))
+//     if (option < 7) {
+//         num1 = parseFloat(prompt("Primer número"))
+//         num2 = parseFloat(prompt("Segundo número"))
+//     }
+
+//     switch (option) {
+//         case 1:
+//             selected = "suma"
+//             selectedSymbol = "+"
+//             result = num1 + num2
+//             break
+//         case 2:
+//             selected = "resta"
+//             selectedSymbol = "-"
+//             result = num1 - num2
+//             break
+//         case 3:
+//             selected = "multiplicacion"
+//             selectedSymbol = "+"
+//             result = num1 * num2
+//             break
+//         case 4:
+//             selected = "potencia"
+//             selectedSymbol = "^"
+//             result = Math.pow(num1, num2)
+//             break
+//         case 5:
+//             selected = "diviaion"
+//             selectedSymbol = "/"
+//             result = num1 / num2
+//             break
+//         case 6:
+//             selected = "raiz"
+//             selectedSymbol = "^1/"
+//             result = Math.pow(num1, 1 / num2)
+//             break
+//         case 7:
+//             alert("calculadora cerrada")
+//             break
+//         default:
+//             alert("No es una opcion valida")
+//     }
+
+//     if (option < 7) {
+//         alert(`
+//             La operacion seleccionada: ${selected}
+//             ${num1}${selectedSymbol}${num2}=${result}
+//             `)
+//     }
+
+// }
+// while (option != 7)
 
