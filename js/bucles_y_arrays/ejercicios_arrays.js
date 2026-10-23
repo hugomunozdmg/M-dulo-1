@@ -182,14 +182,90 @@
 // }
 
 //15
+// let enteros = []
+// let decimales = []
+// let numeroUsuario = 0
 
-let numeros = []
-let numeroUsuario = 0
+// while (numeroUsuario >= 0) {
+//     numeroUsuario = parseFloat(prompt("dame un numero"))
+//     let hasDecimal = numeroUsuario !== parseInt(numeroUsuario)
+//     if (numeroUsuario > 0) {
+//         if (hasDecimal) decimales.push(numeroUsuario)
+//         if (!hasDecimal) enteros.push(numeroUsuario)
+//     }
+// }
 
-while (numeroUsuario >= 0) {
-    numeroUsuario = parseFloat(prompt("dame un numero"))
-    if (numeroUsuario > 0) {
-        numeros.push(numeroUsuario)
-    }
-}
+// let sumaEnteros = 0
+// for (let n = 0; n < enteros.length; n++) {
+//     sumaEnteros += enteros[n]
+// }
+
+// let sumaDecimales = 0
+// for (let n = 0; n < decimales.length; n++) {
+//     sumaDecimales += decimales[n]
+// }
+
+// let media =
+//     (sumaEnteros + sumaDecimales) /
+//     (enteros.length + decimales.length)
+
+
+// alert(`
+//     Hay ${decimales.length} decimales
+//     Hay ${enteros.length} enteros
+//     Suma de los enteros: ${sumaEnteros}
+//     La media de todos los numeros es: ${media}
+//     `)
+
+
+//16
+// let names = ["jose", "felipe", "carla", "estefania", "maria", "jorge"]
+// let grades = [3, 4, 7, 7, 6, 3]
+// let namesWithMaxGrade = []
+// let namesWithMinGrade = []
+// let namesOverMedia = []
+// let salir = false
+// let media = 0
+// let maxGrade = 0
+// let minGrade = 10
+
+// while (!salir) {
+//     let name = prompt("Nombre del alumno")
+//     salir = name == "salir"
+//     if (!salir) {
+//         let grade = parseFloat(prompt(`nota del alumno ${name}`))
+//         if (grade >= 0 && grade <= 10) {
+//             grades.push(grade)
+//             names.push(name)
+//         } else {
+//             alert("nota no valida")
+//         }
+//     }
+// }
+
+// media = grades.reduce((a, b) => a + b) / grades.length
+
+// for (let g = 0; g < grades.length; g++) {
+//     if (grades[g] > media) namesOverMedia.push(names[g])
+// }
+
+// for (let g = 0; g < grades.length; g++) {
+//     if (grades[g] > maxGrade) maxGrade = grades[g]
+//     if (grades[g] < minGrade) minGrade = grades[g]
+// }
+
+// for (let g = 0; g < grades.length; g++) {
+//     if (grades[g] == maxGrade) namesWithMaxGrade.push(names[g])
+//     if (grades[g] == minGrade) namesWithMinGrade.push(names[g])
+// }
+
+// alert(`
+//     ${names}
+//     ${grades}
+//     Nota maxima: ${maxGrade}
+//     ${namesWithMaxGrade}
+//     Nota minima: ${minGrade}
+//     ${namesWithMinGrade}
+//     Media: ${media}
+//     `)
 
