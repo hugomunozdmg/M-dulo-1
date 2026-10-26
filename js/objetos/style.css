@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ejercicios {
+    text-align: center;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+#ejercicios img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 1rem;
+
+}
