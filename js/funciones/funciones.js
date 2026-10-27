@@ -20,11 +20,81 @@
 // decirHolaXVeces(parseInt(prompt("cuantas veces hola")))
 
 //3
-
 // import { suma, resta } from "./operaciones.js"
 
 // console.log(suma(2, 3))
 // console.log(resta(1, 6))
+
+//4
+// function suma(a, b) {
+//     return a + b
+// }
+
+// let num1 = parseFloat(prompt("dame un numero"))
+// let num2 = parseFloat(prompt("dame un numero"))
+
+// alert(`la suma es: ${suma(num1, num2)}`)
+
+
+//5
+// let num1 = parseFloat(prompt("dame un numero"))
+// let num2 = parseFloat(prompt("dame un numero"))
+
+// function biggestNumber(a, b) {
+//     return a > b
+// }
+
+// let firstIsBigger = biggestNumber(num1, num2)
+
+// if(firstIsBigger) console.log("el primer numero es ams grande")
+// if(!firstIsBigger) console.log("el segundo numero es ams grande")
+
+
+//6
+// let num1
+// let num2
+
+// while (num2 != 0) {
+//     num1 = parseFloat(prompt("dame un numero"))
+//     num2 = parseFloat(prompt("dame un numero"))
+//     alert(`la division es ${divide(num1, num2)}`)
+// }
+
+// function divide(a, b) {
+//     return a / b
+// }
+
+//7
+
+// let num = parseFloat(prompt("dame un numero"))
+
+// // if (esPar(num)) {
+// //     alert("el numero es par")
+// // } else {
+// //     alert("el numero es impar")
+// // }
+
+// alert(`El numero es ${esPar(num) ? "par" : "impar"}`)
+
+// function esPar(num) {
+//     return num % 2 == 0
+// }
+
+
+//8
+
+// let num = parseInt(prompt("dame un numero"))
+
+// alert(factorial(num))
+
+// function factorial(n) {
+//     let result = 1
+//     for (let i = 1; i <= n; i++) {
+//         result = result * i
+//     }
+//     return result
+// }
+
 
 //10
 
@@ -55,3 +125,49 @@
 //         cuandoElUsuarioDiga = "salir"
 //     }
 // }
+
+
+//11
+// const euToPound = 0.86
+// const euToDolar = 1.28611
+// const euToYen = 175.84
+
+// let euros = parseFloat(prompt("dame la cantidad en euros"))
+// let currency = prompt("a que lo quieres cambiar (dolar, libra, yen)")
+
+// euToCurrency(euros, currency)
+
+// function euToCurrency(euros, currency) {
+//     let selected
+//     let selectedSymbol
+//     if (currency == "dolar") {
+//         selected = euToDolar
+//         selectedSymbol = "$"
+//     }
+//     if (currency == "libra") {
+//         selected = euToPound
+//         selectedSymbol = "£"
+//     }
+//     if (currency == "yen") {
+//         selected = euToYen
+//         selectedSymbol = "¥"
+//     }
+
+//     document.getElementById("ejercicios").innerHTML = `
+//     <div>
+//         <label for="">Euros a cambiar: ${euros}€</label>
+//         <p>Moneda seleccionada: ${currency}</p>
+//         <p>Cantidad en ${selectedSymbol}: ${euros * selected}</p>
+//     </div>
+//     `
+// }
+
+
+//12
+let year = parseInt(prompt("Dame un año:"))
+
+isLeap(year) ? alert(`El año ${year} es bisiesto`) : alert(`El año ${year} no es bisiesto`)
+
+function isLeap(year) {
+    return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0 
+}
