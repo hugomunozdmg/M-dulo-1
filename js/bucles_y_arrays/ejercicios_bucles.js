@@ -42,14 +42,17 @@
 
 //5
 // let num
-// let suma = 0
 
-// while (num !== 0) {
-//     num = parseFloat(prompt("dame un numero"))
-//     suma += num
+// while (num != 0) {
+//     let suma = 0
+//     num = parseInt(prompt("dame un numero"))
+//     for (let i = 1; i <= num; i++) {
+//         suma += i
+//     }
+
+//     if (num != 0) alert(`la suma es ${suma}`)
 // }
 
-// alert(`la suma es: ${suma}`)
 
 //6
 // let factorial = 1
@@ -266,7 +269,7 @@
 // **********************
 // Calculadora
 // **********************
-// 1. Suma 
+// 1. Suma
 // 2. Resta
 // 3. Multiplicación
 // 4. Potencia

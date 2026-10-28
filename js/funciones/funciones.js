@@ -95,6 +95,19 @@
 //     return result
 // }
 
+//9
+// let userNum = -1
+
+// while(userNum < 0){
+//     userNum = prompt("dame un numero")
+// }
+// alert(`el numero tiene ${getNumberDigits(userNum)} cifras`)
+
+
+// function getNumberDigits(num) {
+//     return parseInt(num).toString().length
+// }
+
 
 //10
 
@@ -164,10 +177,11 @@
 
 
 //12
-let year = parseInt(prompt("Dame un año:"))
+// let year = parseInt(prompt("Dame un año:"))
 
-isLeap(year) ? alert(`El año ${year} es bisiesto`) : alert(`El año ${year} no es bisiesto`)
+// isLeap(year) ? alert(`El año ${year} es bisiesto`) : alert(`El año ${year} no es bisiesto`)
 
-function isLeap(year) {
-    return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0 
-}
+// function isLeap(year) {
+//     return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0
+// }
+
