@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .person-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 1rem;
+            width: fit-content;
+            padding: 1rem;
+        }
+
+        p {
+            margin: 0.1rem;
+        }
+
+        #person-card img{
+            width: 4rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <input id="index-input" type="text">
+        <button onclick="searchPersonByIndex()">search</button>
+    </div>
+    <div id="persons">
+    </div>
+
+    <script src="personas_data.js"></script>
+    <script src="personas.js"></script>
+</body>
+
+</html>

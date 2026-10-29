@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Personas</title>
+    <style>
+
+        #alert {
+            color: red;
+        }
+        
+        .planet-card {
+            width: fit-content;
+            padding: 1rem;
+            border: 5px double black;
+            border-radius: 1rem;
+            margin: 1rem;
+        }
+
+        #Ejercicios img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="search-box">
+            <input id="my-input" type="text">
+            <button id="search-btn">search</button>
+            <div id="alert"></div>
+        </div>
+    </div>
+    <div id="Ejercicios"></div>
+
+    <script src="solar_system_data.js"></script>
+    <script src="eventos_ejercicios.js"></script>
+</body>
+
+</html>
