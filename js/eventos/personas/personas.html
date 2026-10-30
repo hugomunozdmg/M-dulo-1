@@ -20,8 +20,16 @@
             margin: 0.1rem;
         }
 
-        #person-card img{
+        #person-card img {
             width: 4rem;
+        }
+
+        #search-error {
+            color: red;
+        }
+
+        #loading {
+            height: 2ch;
         }
     </style>
 </head>
@@ -29,8 +37,12 @@
 <body>
 
     <div>
-        <input id="index-input" type="text">
-        <button onclick="searchPersonByIndex()">search</button>
+        <input id="my-input" type="text">
+        <button onclick="search()">search</button>
+
+
+        <p id="loading"></p>
+        <p id="search-error"></p>
     </div>
     <div id="persons">
     </div>

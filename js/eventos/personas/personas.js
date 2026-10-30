@@ -1,7 +1,6 @@
-displayCard(persons[0])
 
-function displayCard(person) {
-    getHTML("persons").innerHTML = `
+function displayCards(person) {
+    getHTML("persons").innerHTML += `
 <div class="person-card" style="background-color:${person.eyeColor}">
         <img src="${person.image}" alt="">
         <h2>Nombre: ${person.name}</h2>
@@ -13,13 +12,70 @@ function displayCard(person) {
 `
 }
 
+function search() {
+    let value = getHTML("my-input").value
 
-function searchPersonByIndex() {
-    let inputValue = getHTML("index-input").value
-    if(persons[inputValue]){
-        displayCard(persons[inputValue])
+    if(parseInt(value)){
+        searchPersonByIndex()
+    }else{
+        searchPersonByText()
     }
 }
+
+function searchPersonByIndex() {
+    load()
+    setTimeout(() => {
+    let index = getHTML("my-input").value
+    persons[index] ? displayCards(persons[index]) :
+        showError("el suario no existe", "search-error")
+    }, 3700)
+}
+
+function searchPersonByText() {
+    let text = getHTML("my-input").value
+    let foundUser = false
+    getHTML("persons").innerHTML = ""
+    for (let i = 0; i < persons.length; i++) {
+        if (persons[i].name.toLowerCase().includes(text)) {
+            displayCards(persons[i])
+            foundUser = true
+        }
+    }
+    if (!foundUser) {
+        showError("el suario no existe", "search-error")
+    }
+}
+
+let puntos = ""
+let contador = 0
+
+function load() {
+    setTimeout(() => {
+        contador += 1
+        if (puntos.length < 3) {
+            puntos += "."
+        } else {
+            puntos = ""
+        }
+        getHTML("loading").innerText = puntos
+        if (contador < 12) {
+            load()
+        } else {
+            getHTML("loading").innerText = ""
+            contador = 0
+        }
+    }, [300])
+}
+
+function showError(message, id) {
+    getHTML(id).innerText = message
+    setTimeout(() => {
+        getHTML(id).innerText = ""
+    }, 2000)
+}
+
+
+
 
 function getHTML(id) {
     return document.getElementById(id)
